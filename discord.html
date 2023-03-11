@@ -6,14 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Discord Profile </title>
 </head>
+
+<style>
+    .pfp {
+        border-radius: 50%;
+        width: 85px;
+        position: absolute;
+        top: 30px;
+        left: 15px;
+    }
+    .banner {
+        background-color: blue;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 400px;
+        height: 75px;
+        position: absolute;
+        top: 0px;
+    }
+    .profile {
+        background-color: gray;
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        top: 150px;
+        left: 550px;
+    }
+</style>
+
 <body>
-    <div>
-        <style>
-            .pfp {
-                border-radius: 50%;
-            }
-        </style>
-        
+    <div class="profile">
+        <img class="banner" src="./images.png" alt="Image">
         <img class="pfp" src="./discord-logo.webp" alt="Discord Logo">
     </div>
 </body>
