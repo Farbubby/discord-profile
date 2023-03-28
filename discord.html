@@ -11,7 +11,7 @@
 <style>
     .pfp {
         border-radius: 50%;
-        width: 87.5px;
+        width: 88px;
     }
 
     .banner {
@@ -59,6 +59,8 @@
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
     }
 
     .tag {
@@ -74,6 +76,8 @@
         padding: 2.5px;
         display: grid;
         place-content: center;
+        margin-right: 35px;
+        margin-left: 270px;
     }
 
     .row {
@@ -81,6 +85,7 @@
         width: 600px;
         margin-top: 15px;
         flex-direction: row-reverse;
+        align-items: center;
     }
 
     .options {
@@ -112,40 +117,56 @@
         margin-bottom: 15px;
     }
 
-    .dots {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        margin-right: 30px;
-        font-weight: bold;
-        color: lightgray;
-        font-size: 8px;
-    }
-
     .titles {
         color: white;
         font-size: 13px;
         font-weight: bold;
         margin-bottom: 7.5px;
     }
+
+    .nitro {
+        height: 25px;
+        width: 25px;
+    }
+
+    .status {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #65a765;
+        border: 5px #3A3B3C solid;
+        left: 70px;
+        top: 70px;
+    }
+
+    .activity {
+        color: lightgray;
+        font-size: 12px;
+        font-style: italic;
+        margin-left: 15px;
+    }
+
+
 </style>
 
 <body>
     <div class="profile">
         <div class="circle">
             <img class="pfp" src="./discord-logo.webp" alt="Discord Logo">
+            <div class="status"></div>
         </div>
         <img class="banner" src="./images.png" alt="Image">
         <div class="row">
-            <div>
-                <div class="dots">.</div>
-                <div class="dots">.</div>
-                <div class="dots">.</div>
-            </div>
             <div class="greenButton">Send Message</div>
+            <img class="nitro" src="./boost.png" alt="Boost">
+            <img class="nitro" src="Nitro_badge.webp" alt="Nitro">
         </div>
         <div class="box">
-            <div class="username">Farbubby<span class="tag">#1000</span></div>
+            <div class="username">
+                Farbubby<span class="tag">#1000</span>
+                <span class="activity">Last Active: 10 mins ago</span>
+            </div>
             <div class="bio">Doing Deez</div>
             <div class="options">
                 <div class="text">User Info</div>
